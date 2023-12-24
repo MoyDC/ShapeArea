@@ -6,28 +6,38 @@ using System.Threading.Tasks;
 
 namespace ShapeArea
 {
-    //clase para calcular el area de figuras geometricas
+    //Calculate Area of Plane Shapes
     static internal class CalculateShapeArea
     {
-        public static void Square()
+        public static double Square(double a)
         {
-            Console.WriteLine("You have choicen a Square");
+            //Console.WriteLine("You have choicen a Square");
+            return a * a;
         }
-        public static void Rectangle()
+        public static double Rectangle(double w, double h)
         {
-            Console.WriteLine("You have choicen a Rectangle");
+            //Console.WriteLine("You have choicen a Rectangle");
+            return w * h;
         }
-        public static void Triangle()
+        public static double Triangle(double b, double h)
         {
-            Console.WriteLine("You have choicen a Triangle");
+            //Console.WriteLine("You have choicen a Triangle");
+            return 0.5 * b * h;
         }
-        public static void Diamond()
+        public static double Diamond(double D, double d)
         {
-            Console.WriteLine("You have choicen a Diamond");
+            //Console.WriteLine("You have choicen a Diamond");
+            return 0.5 * D * d;
         }
-        public static void Trapeze()
+        public static double Trapezoid(double a, double b, double h)
         {
-            Console.WriteLine("You have choicen a Trapeze");
+            //Console.WriteLine("You have choicen a Trapezoid");
+            return 0.5*(a + b) * h;
+        }
+        public static double Circle(double r)
+        {
+            //Console.WriteLine("You have choicen a Circle");
+            return Math.PI * r * r;
         }
 
     }
