@@ -28,11 +28,18 @@
 
                 result = (float)Math.PI * (radius * radius);
             }
-
+            
             Console.WriteLine("The result is: " + result);
+            Console.WriteLine();
+
+            CalculateShapeArea.Rectangle();
+            CalculateShapeArea.Triangle();
+            CalculateShapeArea.Diamond();
+            CalculateShapeArea.Square();
+
             Console.ReadKey();
-
-
         }
+
+        
     }
 }
