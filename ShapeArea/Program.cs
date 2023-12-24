@@ -139,7 +139,7 @@
                     Continue = false;
                 }
             } while (Continue);
-
+            
             Console.WriteLine("\nThank for using this calculator");
             Console.ReadKey();
         }
